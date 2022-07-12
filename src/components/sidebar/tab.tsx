@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import { TbPlaylist } from 'react-icons/tb'
 import useStore from '../../store'
-import './tab.css'
+import styles from './tab.module.css'
 
 export default ({
 	icon,
@@ -17,15 +17,17 @@ export default ({
 	const title = id || children
 
 	return (
-		<span key={id} className="container">
+		<span key={id} className={styles.container}>
 			<div
-				className={`box ${currentPlaylist === id && 'active'}`}
+				className={`${styles.box} ${
+					currentPlaylist === title ? styles.active : ''
+				}`}
 				role="button"
 				tabIndex={0}
 				onClick={() => title && setCurrentPlaylist(title)}
 			>
-				<div className="icon">{icon || <TbPlaylist />}</div>
-				<p className="text">{title}</p>
+				<div className={styles.icon}>{icon || <TbPlaylist />}</div>
+				<p className={styles.text}>{title}</p>
 			</div>
 		</span>
 	)

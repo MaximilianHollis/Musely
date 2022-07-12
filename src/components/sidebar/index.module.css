@@ -1,4 +1,4 @@
-nav {
+.nav {
 	width: 280px;
 	height: 100%;
 	border-right: var(--border);
@@ -9,7 +9,6 @@ nav {
 /* nav:last-child{
 
 } */
-
-section {
+.nav > section {
 	padding: 8px 0;
 }

@@ -1,3 +1,3 @@
-import './index.css'
+import styles from './index.module.css'
 
-export default () => <div className="song" />
+export default () => <div className={styles.song} />

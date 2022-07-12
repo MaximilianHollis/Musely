@@ -1,11 +1,11 @@
-.App {
+.app {
   text-align: center;
   width: 100vw;
   height: 100vh;
   display: flex;
 }
 
-.Container {
+.container {
   width: 100%;
   max-height: calc(100% - 120px);
   height: min-content;

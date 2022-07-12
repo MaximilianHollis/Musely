@@ -7,7 +7,7 @@ import {
 	TbClock,
 } from 'react-icons/tb'
 import Tab from './tab'
-import './index.css'
+import styles from './index.module.css'
 import useStore from '../../store'
 
 export default () => {
@@ -43,7 +43,7 @@ export default () => {
 		shallow,
 	)
 	return (
-		<nav>
+		<nav className={styles.nav}>
 			<section>
 				{defaultPlaylists.map(({ id, icon }) => (
 					<Tab key={id} id={id} icon={icon} />

@@ -1,7 +1,7 @@
-import './index.css'
+import styles from './index.module.css'
 
 export default () => (
-	<div className="overlay">
-		<div className="overlay-content" />
+	<div className={styles.overlay}>
+		<div className={styles.overlay_content} />
 	</div>
 )
