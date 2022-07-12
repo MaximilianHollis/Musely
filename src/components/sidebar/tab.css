@@ -7,7 +7,6 @@
 }
 
 .box {
-	user-select: none;
 	color: white;
 	padding: 1px 20px;
 	display: flex;
@@ -18,14 +17,16 @@
 	cursor: pointer;
 }
 
-
+.active {
+	background: #303030;
+}
 
 .box:hover {
 	background: #333333;
 }
 
 .box:active {
-	background: #4e4e4e;
+	background: #474747;
 }
 
 .icon {
@@ -33,6 +34,10 @@
 	height: 36px;
 	background: #3a3a3a;
 	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
 }
 
 .text {

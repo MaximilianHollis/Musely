@@ -1,11 +1,9 @@
 nav {
-	position: absolute;
-	background: #242424;
-	top: 0;
-	left: 0;
-	width: 220px;
+	width: 280px;
 	height: 100%;
-	border-right: 1px solid #3a3a3a;
+	border-right: var(--border);
+	flex-shrink: 0;
+	overflow: auto;
 }
 
 /* nav:last-child{
@@ -13,6 +11,5 @@ nav {
 } */
 
 section {
- padding: 4px 0;
+	padding: 8px 0;
 }
-

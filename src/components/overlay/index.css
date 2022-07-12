@@ -1,0 +1,9 @@
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  border-top: var(--border);
+  background: var(--background);
+}
