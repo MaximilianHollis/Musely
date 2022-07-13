@@ -3,6 +3,7 @@
   --white: #ffffff;
   --blue: rgb(100, 146, 199);
   --border: 1.6px solid #3a3a3a;
+  --primary: #3a3a3a;
 }
 
 * {
